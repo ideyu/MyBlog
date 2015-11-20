@@ -1,0 +1,8 @@
+<h1>New</h1>
+<p>
+	<%= bootstrap_form_for :articles, url: articles_path do |f| %>
+  	<%= f.text_field :email, label: "dsadasd" %>
+  	<%= f.text_area :password %>
+  	<%= f.submit "Log In", class: "btn btn-primary" %>
+<% end %>
+</p>
