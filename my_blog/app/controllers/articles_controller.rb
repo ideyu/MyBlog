@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   def index
+    @articles = Article.all
   end
 
   def new
@@ -13,6 +14,6 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @article = Article.find(1)
+    @article = Article.find(params[:id])
   end
 end
